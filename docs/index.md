@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# Welcome
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+LogVoyage is free open-source logs, exceptions and metrics management tool.
+It allows you to store and explore your logs in real-time with friendly web ui.
 
-## Commands
+Check out [installing][1] instructions.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+  [1]: installing_from_source.md
 
-## Project layout
+## Links
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+[IRC](http://webchat.freenode.net/?channels=#logvoyage) #logvoyage channel  
+[Gitter](http://gitter.im/logvoyage/Lobby)  
+[Twitter](https://twitter.com/firstrow)  

@@ -1,4 +1,21 @@
+# Project information
 site_name: LogVoyage
-theme_dir: 'mkdocs-material/material'
+site_description: 'Open Source Log, Exception, Metrics management.'
+site_author: 'Andrii Bubis'
+# site_url: 'http://logvoyage.com'
 
+# Repository
+repo_name: 'logvoyage/logvoyage'
+repo_url: 'https://github.com/logvoyage/logvoyage'
+
+theme: 'material'
+markdown_extensions:
+  - admonition
+  - codehilite
+
+pages:
+  - Home: index.md
+  - Installing:
+      - 'From Source': 'installing_from_source.md'
+      - 'Using Docker': 'installing_using_docker.md'
 
