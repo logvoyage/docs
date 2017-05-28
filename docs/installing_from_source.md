@@ -28,7 +28,7 @@ We assume you have all services listed above installed.
 Before starting we need to create main configuration file `$HOME/.logvoyage/config.json`.
 Copy config file from LogVoyage directory:
 ```
-cp $GOPATH/src/github.com/logvoyage/logvoyage/config/config.json $HOME/.logvoyage
+cp $GOPATH/src/github.com/logvoyage/logvoyage/config/config.json $HOME/.logvoyage/config.json
 ```
 
 Example file:
@@ -73,9 +73,9 @@ and sending to queue. Consumer(s) will process data and send it to storage.
 
 Start workers and services:
 ```
-logvoyage-producer
-logvoyage-consumer
-logvoyage-api
+logvoyage start consumer
+logvoyage start producer
+logvoyage start api
 ```
 
 ## Frontend

@@ -3,15 +3,16 @@ site_name: LogVoyage
 site_description: 'Open Source Log, Exception, Metrics management.'
 site_author: 'Andrii Bubis'
 # site_url: 'http://logvoyage.com'
-
-# Repository
 repo_name: 'logvoyage/logvoyage'
 repo_url: 'https://github.com/logvoyage/logvoyage'
-
 theme: 'material'
 markdown_extensions:
   - admonition
   - codehilite
+extra:
+  palette:
+    primary: 'indigo'
+    accent: 'light blue'
 
 pages:
   - Home: index.md
