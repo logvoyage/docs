@@ -87,8 +87,9 @@ manage multiple node versions. Clone frontend repository in your code directory,
 cd ~/Code
 git clone git@github.com/logvoyage/frontend logvoyage-frontend
 cd logvoyage-frontend
-nvm use 6.9
-npm install -g yarn
+nvm install 7.0
+nvm use 7.0
+npm install -g yarn @angular/cli
 yarn install
 ng serve
 ```
