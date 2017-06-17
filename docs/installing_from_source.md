@@ -32,27 +32,6 @@ mkdir ~/.logvoyage
 cp $GOPATH/src/github.com/logvoyage/logvoyage/config.json $HOME/.logvoyage
 ```
 
-Example file:
-``` json
-{
-  "secret": "random-secret-code",
-  "db": {
-    "address": "localhost",
-    "database": "logvoyage",
-    "user": "postgres",
-    "password": "postgres",
-    "port": "5432",
-    "sslmode": "disable"
-  },
-  "elastic": {
-    "url": "http://localhost:9200"
-  },
-  "amqp": {
-    "url": "amqp://guest:guest@localhost:5672"
-  }
-}
-```
-
 ## Database setup
 
 Run next commands to create and setup basic database structure:
