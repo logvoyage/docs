@@ -18,17 +18,18 @@ Before running LogVoyage itself, there are a few minimum services that are requi
 ## Get sources
 
 Installing LogVoyage is as easy as installing any other go package:
-```
+``` bash
 go get -u github.com/logvoyage/logvoyage
 ```
 
 ## Configuration
 
 We assume you have all services listed above installed.
-Before starting we need to create main configuration file `$HOME/.logvoyage/config.json`.
+Before starting create main configuration file `$HOME/.logvoyage/config.json`.
 Copy config file from LogVoyage directory:
-```
-cp $GOPATH/src/github.com/logvoyage/logvoyage/config/config.json $HOME/.logvoyage/config.json
+``` bash
+mkdir ~/.logvoyage
+cp $GOPATH/src/github.com/logvoyage/logvoyage/config.json $HOME/.logvoyage
 ```
 
 Example file:
@@ -50,12 +51,6 @@ Example file:
     "url": "amqp://guest:guest@localhost:5672"
   }
 }
-```
-
-Valiables from json file can be overriden via environment variables. For example, we can change database during start.
-ENV variables should be prefixed with `LV`. Naming convention is simple: `key.nested` should be `LV_KEY_NESTED`.
-``` bash
-LV_DB_DATABASE="logvoyage-test" logvoyage start api
 ```
 
 ## Database setup
